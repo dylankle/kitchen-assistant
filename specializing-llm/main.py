@@ -11,7 +11,8 @@ def prompt_builder(user_prompt: str) -> str:
 
     return (
         f"Your job is to evaluate the flavor compatibility of ingredients."
-        f"Do NOT include phrases like based on the context according to the above or provided information"
+        f"Do NOT include phrases like based on the context according to the above or provided information."
+        f"Do try to expand the answer with simple reasoning."
         f"Context:\n{context}\n"
         f"Question:\n{user_prompt}\n"
     )
